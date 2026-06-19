@@ -536,7 +536,7 @@
                 <div class="p-8">
                     <!-- Petunjuk Keamanan Sesuai Desain Canvas -->
                     <div class="mb-4 bg-slate-100 p-3 rounded-xl text-xs text-slate-500 font-mono text-center border border-slate-200">
-                        <b>🔑 AKSES INTERNAL PANITIA:</b><br>
+                        <b>🔑 AKSES INTERNAL RAHASIA:</b><br>
                         Admin: <span class="text-indigo-600 font-bold">admin123</span><br>
                         Panitia: <span class="text-emerald-600 font-bold">panitia123</span>
                     </div>
@@ -544,8 +544,8 @@
                         <div>
                             <label class="block text-sm font-bold text-slate-600 mb-1">Masuk Sebagai</label>
                             <select id="login-role" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-indigo-500 font-bold">
-                                <option value="admin">Administrator</option>
-                                <option value="panitia">Panitia</option>
+                                <option value="admin">Administrator (Akses Penuh)</option>
+                                <option value="panitia">Panitia (Verifikasi Saja)</option>
                             </select>
                         </div>
                         <div>
@@ -697,10 +697,10 @@
     <footer class="bg-slate-900 text-slate-400 text-center py-8 pb-28 md:pb-8 shadow-inner">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-xl font-black text-white mb-2" id="footer-school-name">SMKS SANJAYA BAJAWA</h2>
-            
+            <p class="text-sm mb-4">Pusat Pendidikan Kejuruan Unggulan Berbasis Teknologi & Karakter.</p>
             <div class="border-t border-slate-800 pt-4 mt-4">
                 <p class="text-sm font-bold">&copy; 2026 Hak Cipta Dilindungi.</p>
-                <p class="text-xs mt-1 text-slate-600">Dibangun dengan ❤️ oleh TIM-IT SANJAYA</p>
+                <p class="text-xs mt-1 text-slate-600">Dibangun dengan ❤️ oleh Web Builder Pro-Sarjanasoft</p>
             </div>
         </div>
     </footer>
@@ -728,11 +728,11 @@
         // JEMBATAN WEB APP URL (GOOGLE APPS SCRIPT)
         // SILAKAN GANTI URL DI BAWAH DENGAN URL DEPLOY AKHIR WEB APP ANDA NANTI!
         // =========================================================================
-        const GAS_URL = "https://script.google.com/macros/s/AKfycbzDBWCIDkOgdgXF_sF5wZqkH6vLSiIOFpTfV_cA8Kuhiy8liuJn1uhMprmfgJ0s2noT0Q/exec"; 
+        const GAS_URL = "https://script.google.com/macros/s/AKfycbzL7k6Jp-TbdWf-gG6A6m1y9dE0O3f9_q_R5cQ/exec"; 
 
         // Konstanta Password Berbeda Sesuai Instruksi Canvas
-        const PASS_ADMIN = "sanjaya1234#";      // Password Administrator (Akses Penuh)
-        const PASS_PANITIA = "panitia1234#";  // Password Panitia (Akses Verifikasi Data)
+        const PASS_ADMIN = "admin123";      // Password Administrator (Akses Penuh)
+        const PASS_PANITIA = "panitia123";  // Password Panitia (Akses Verifikasi Data)
 
         // State & Data
         let appData = [];
